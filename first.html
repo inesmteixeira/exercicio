@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Nome do Documento</title>
+	<link rel="stylesheet" type="text/css" href="first.css">
+</head>
+    
+<body>
+
+
+
+<script>
+    // Loop 30 times:
+for (var i = 0; i < 30; i++) {
+    // Create a circle shaped path at a random position
+    // in the view:
+    var path = new Path.Circle({
+        center: Point.random() * view.size,
+        radius: 25,
+        fillColor: 'black',
+        strokeColor: 'white'
+    });
+
+    // When the mouse is pressed on the item, remove it:
+    path.onMouseDown = function(event) {
+        this.remove();
+    }
+}
+    
+    
+    </script>
+
+
+<script src="jquery-3.1.1.min.js"></script>
+<script src="script.js"></script>
+    
+</body>
+</html>

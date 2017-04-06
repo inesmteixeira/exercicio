@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nome do Documento</title>
+    <link rel="stylesheet" type="text/css" href="next.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="texto">
+        <div class="titulo">
+            <p>WELCOME TO THE</p>
+            <h1 class="city">M</h1>
+            <h1 class="city">MA</h1>
+            <h1 class="city">MAG</h1>
+            <h1 class="city">MAGI</h1>
+            <h1 class="city">MAGIC</h1>
+            <h1 class="city">and</h1>
+            <h1 class="city">something else!</h1> </div>
+        <br>
+        <br>
+        <h2>Let's make Magic</h2>
+        <h3>Make it disappear!</h3>
+        <br>
+        <br> <a href="first.html"><h4>Próxima página.</h4> </a> </div>
+    <div class="w3-content w3-section" style="max-width:100%"> <img class="mySlides" src="images/01.jpg" style="width:100%"> <img class="mySlides" src="images/02.jpg" style="width:100%"> <img class="mySlides" src="images/03.jpg" style="width:100%"> </div> <img class="mySlides" src="images/04.jpg" style="width:100%"> </div>
+    
+    
+    
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="script.js"></script>
+    
+    
+    
+    <!-- script -->
+    <!-- slide fundo -->
+    <script>
+        w3.slideshow(".city");
+    </script>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 1000); //  1 segundo
+        }
+    </script>
+    
+    <!-- desaparecer texto -->
+    <script>
+        $(document).ready(function () {
+            $("h3").click(function () {
+                $(this).fadeOut();
+            });
+        });
+    </script>
+    
+
+<script src="jquery-3.1.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
