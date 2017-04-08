@@ -19,23 +19,11 @@ span.onclick = function() {
 }
 
 
-// pagina dois - next
+// pagina dois - next 
 
 
 
-// Loop 30 times:
-for (var i = 0; i < 30; i++) {
-    // Create a circle shaped path at a random position
-    // in the view:
-    var path = new Path.Circle({
-        center: Point.random() * view.size,
-        radius: 25,
-        fillColor: 'black',
-        strokeColor: 'white'
-    });
 
-    // When the mouse is pressed on the item, remove it:
-    path.onMouseDown = function(event) {
-        this.remove();
-    }
-}
+
+
+

@@ -4,36 +4,50 @@
     <meta charset="UTF-8">
     <title>Nome do Documento</title>
 	<link rel="stylesheet" type="text/css" href="first.css">
+	<script src="jquery-3.1.1.min.js"></script>
+<script src="script.js"></script>
 </head>
     
 <body>
 
+<div id="mydiv">
+ 
+</div>
+
+
+
+
+
+
+    
+
+<div id="countdowntimer">20 </div>
+
+<script>
+    var timeleft = 20;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+</script>
+
+   
+   
+   
+    <!-- fundo -->
 
 
 <script>
-    // Loop 30 times:
-for (var i = 0; i < 30; i++) {
-    // Create a circle shaped path at a random position
-    // in the view:
-    var path = new Path.Circle({
-        center: Point.random() * view.size,
-        radius: 25,
-        fillColor: 'black',
-        strokeColor: 'white'
-    });
-
-    // When the mouse is pressed on the item, remove it:
-    path.onMouseDown = function(event) {
-        this.remove();
-    }
+var fade_out = function() {
+  $("#mydiv").fadeOut().empty();
 }
+
+setTimeout(fade_out, 20000);
     
-    
-    </script>
+</script>
 
 
-<script src="jquery-3.1.1.min.js"></script>
-<script src="script.js"></script>
-    
 </body>
 </html>
