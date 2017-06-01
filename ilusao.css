@@ -1,0 +1,61 @@
+@charset "utf-8";
+* {margin: 0px;padding: 0px;}
+
+#countdowntimer {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+}
+
+#mydiv {
+background-image: url("images/optical_illusion.gif");
+height: 800px;
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100%;
+width: 100%;
+z-index: 100;
+display: block;
+position: relative;
+} 
+
+
+.frase{
+    font-size:20px;
+    display: inline-block;
+    position: relative;
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+     font-family: Oswald, sans-serif;
+
+}
+
+.scroll{
+    padding-top: 300px;
+    font-family: Oswald, sans-serif;
+
+
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .frase {
+        font-size:20px;
+    color: black;
+    text-align: center;
+    padding-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+     font-family: Oswald, sans-serif;
+    z-index: -100;
+
+    }
+    }

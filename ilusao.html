@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Nome do Documento</title>
+	<link rel="stylesheet" type="text/css" href="ilusao.css">
+	<script src="jquery-3.1.1.min.js"></script>
+<script src="script.js"></script>
+<script src="script.js"></script>
+</head>
+    
+<body>
+
+<div id="mydiv">
+ 
+</div>
+
+
+<div class="frase">
+<h3>Our visual system remains too limited to tackle all of the information our eyes take in. <br> “For that our brain would need to be bigger than a building, and still then it wouldn’t be enough,”</h3>
+<br><br><br><br><br><br><br><br><br><br>
+<h2>Seeing, then, is certainly not always believing.</h2>
+
+<a class="scroll" href="inicio.html"><img height="42" width="42" src="images/icon.png"></a>
+ 
+</div>
+
+
+
+
+    
+
+<div id="countdowntimer">20 </div>
+
+<script>
+    var timeleft = 20;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+</script>
+
+   
+   
+   
+<!-- fundo -->
+
+
+<script>
+var fade_out = function() {
+  $("#mydiv").fadeOut().empty();
+}
+
+setTimeout(fade_out, 20000);
+    
+</script>
+
+
+</body>
+</html>

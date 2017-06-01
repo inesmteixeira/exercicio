@@ -1,0 +1,98 @@
+body {
+margin: 0px;
+border: none;
+}
+
+#video-background {
+position: fixed;
+z-index: -1;
+width: 100%;
+margin: auto;
+}
+
+
+.quadro{
+    margin-top: 800px;
+    margin-bottom: 0px;
+    height: 1000px;
+    background-color:black;
+
+}
+
+.transparente{
+    height: 800px;
+    background-color:black;
+    opacity: 0.97;
+}
+
+h1{
+    font-size:36px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+     font-family: Oswald, sans-serif;
+
+}
+
+
+.olho{
+    width: 100%;
+    height: 600px;
+}
+
+.ultimo{
+    margin-top: 700px;
+    height: 800px;
+    background-color:black;
+
+}
+
+
+h2{
+    font-size:100px;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+     font-family: Oswald, sans-serif;
+
+}
+
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+     font-family: Oswald, sans-serif;
+letter-spacing: 10px;
+    font-size: 20px;
+}
+
+a:hover, a:active {
+    background-color: yellow;
+    color: black;
+    font-size: 45px;
+
+}
+
+.scroll:link, .scroll:visited {
+    margin-top: 700px;
+    background-color: black;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    width: 100%;
+     font-family: Oswald, sans-serif;
+letter-spacing: 10px;
+    font-size: 20px;
+}
+
+@keyframes rotate360 {
+  to { transform: rotate(360deg); }
+}
+img { animation: 2s rotate360 infinite linear; }

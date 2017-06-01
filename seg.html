@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Illusion</title>
+	<link rel="stylesheet" type="text/css" href="seg.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<script src="jquery-3.1.1.min.js"></script>
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+
+
+
+
+
+<video autoplay loop id="video-background">
+  <source src="images/spinningeye.mp4" type="video/mp4">
+</video>
+
+
+
+
+<div class="main">
+</div>
+
+
+
+<div class="transparente">
+    
+    <a class="scroll" href="#section2"><img height="42" width="42" src="images/eye1.png"></a>
+    
+</div>
+
+   <div class="quadro" id="section2">
+<h1>Can you believe your eyes?</h1>
+
+<video class="olho" autoplay muted>
+  <source src="images/macro.mp4" type="video/mp4">
+</video>
+</div> 
+
+<div class="ultimo">
+    <h2>Your eyes trick your mind?</h2>
+    
+    <a href="magic.html" target="_blank">Come and find out...</a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</body>
+</html>
